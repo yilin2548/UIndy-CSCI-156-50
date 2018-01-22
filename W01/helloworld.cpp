@@ -1,3 +1,8 @@
+/*  Name: Yilin Liu
+    Date: 1/17/2018
+    Desc: Demo of passing parameter to the program
+*/
+
 #include <iostream>
 #include <cstdlib>
 
