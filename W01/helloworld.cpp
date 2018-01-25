@@ -14,6 +14,8 @@ int main(int argc, char* argv[]){
     int sum = 0;
     for (int i=0; i < argc; i++){
         cout << argv[i] << endl;
+        // Note that argv is a charactor so if we need to do operation to argv
+        // as a number we need to call function atoi (included in cstdlib)
         sum += atoi(argv[i]);
     }
     cout << "Sum = " << sum << endl;
