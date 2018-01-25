@@ -35,26 +35,28 @@ void print(const person_t &ps){
 // Example for printing out vector of person
 // input: vector<person_t> &pp (pass by reference): a vector of person 
 void print(const vector<person_t> &pp){
-    for(int i=0; i<pp.size(); i++){
+    // size() is a function of vector, return value always > 0
+    // So we can use unsigned i to compare with size()
+    for(unsigned i=0; i<pp.size(); i++){
         print(pp[i]);
     }
 }
 
 
-// Example for seaching a person by name
-// intput: string searchName: name to search
-//         person_t *pp: array of person, pp[size]
-//         int size: size of the array pp
-// return type: person_t
-person_t search(string searchName, const vector<person_t> &pp){
-    for(int i = 0; i< pp.size(); i++){
-        if(pp[i].name == searchName){
+// Example for searching inside a vector of person
+// input: vector<person_t> &pp (pass by reference): a vector of person 
+void search(const vector<person_t> &pp){
+    string name;
+    cout << "Which name would you like to search?" << endl;
+    cin >> name;
+    for(unsigned i = 0; i< pp.size(); i++){
+        if(pp[i].name == name){
             cout << "found person!" << endl;
-            return pp[i];
+            print(pp[i]);
         }
     }
-}
 
+}
 
 // random person generator
 person_t randomPerson(){
@@ -83,10 +85,14 @@ int main(){
     things.push_back("Video Games");
     bob.fav_things = things;
     
-    // vector of people
+    // Create a vector called people, type of person_t
     vector<person_t> people;
-    people.push_back(bob);
-    people.push_back(randomPerson());
+    // Vector's push_back function will add the variable to the
+    // end of the vector.
+    // Add the variable bob to vector people.
+    people.push_back(bob);  
+    // Add the 5 variables returned by function randomPerson to vector people.
+    people.push_back(randomPerson());  
     people.push_back(randomPerson());
     people.push_back(randomPerson());
     people.push_back(randomPerson());
@@ -95,8 +101,6 @@ int main(){
     
     print(people);
 
-    person_t foundPerson;
-    foundPerson = search("Jamie", people);
-    print(foundPerson);
+    search(people);
     return 0;
 }

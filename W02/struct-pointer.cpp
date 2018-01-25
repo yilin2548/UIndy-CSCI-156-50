@@ -33,24 +33,11 @@ void print(const person_t &ps){
 // Example for printing out vector of person
 // input: vector<person_t> &pp (pass by reference): a vector of person 
 void print(const vector<person_t> &pp){
-    for(int i=0; i<pp.size(); i++){
+    for(unsigned i=0; i<pp.size(); i++){
         print(pp[i]);
     }
 }
 
-// Example for seaching a person by name
-// intput: string searchName: name to search
-//         person_t *pp: array of person, pp[size]
-//         int size: size of the array pp
-// return type: person_t
-person_t search(string searchName, const vector<person_t> &pp){
-    for(int i = 0; i< pp.size(); i++){
-        if(pp[i].name == searchName){
-            cout << "found person!" << endl;
-            return pp[i];
-        }
-    }
-}
 
 // random person generator
 person_t randomPerson(){
