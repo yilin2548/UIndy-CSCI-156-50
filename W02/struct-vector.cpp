@@ -44,6 +44,7 @@ void print(const vector<person_t> &pp){
 
 
 // Example for searching inside a vector of person
+
 // input: vector<person_t> &pp (pass by reference): a vector of person 
 void search(const vector<person_t> &pp){
     string name;
