@@ -1,3 +1,7 @@
+// Name: Yilin Liu
+// Date: 2/5/2018
+// Desc: Demonstration of class and object
+
 #include <iostream>
 
 using namespace std;

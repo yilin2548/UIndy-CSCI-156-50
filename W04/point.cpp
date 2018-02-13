@@ -1,3 +1,7 @@
+// Name: Yilin Liu
+// Date: 2/7/2018
+// Desc: Demonstration of a point class
+
 #include<iostream>
 #include<math.h>
 
@@ -56,7 +60,6 @@ class Point{
 };
 
 int main(){
-    //const int SIZE = 100;
     Point a;
     cout << "After calling defualt constructor a: ";
     a.print();
@@ -66,7 +69,7 @@ int main(){
     cout << "a: ";
     a.print();
     
-    cout << "A's distance to origin: 14.1421" << a.distanceToOrigin() << endl;
+    cout << "A's distance to origin (14.1421): " << a.distanceToOrigin() << endl;
     
     Point b(6, 7);
     cout << "b: ";
@@ -74,7 +77,7 @@ int main(){
     // b.setY(10);
     b.print();
     
-    cout <<"Distance between a and b is: " << a.distanceToOther(b) << endl;
+    cout <<"Distance between a and b is (5): " << a.distanceToOther(b) << endl;
     
     return 0;
 }
