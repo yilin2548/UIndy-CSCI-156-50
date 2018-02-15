@@ -1,3 +1,6 @@
+// Name: Yilin Liu-Letike
+// Date: 2/13/18
+// Desc: Implementation of Point Class
 #include <iostream>
 #include <sstream>
 #include <math.h>

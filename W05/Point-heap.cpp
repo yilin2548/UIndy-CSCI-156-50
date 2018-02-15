@@ -1,3 +1,6 @@
+// Name: Yilin Liu-Letike
+// Date: 2/15/18
+// Desc: Implementation of Point Class on the heap
 #include <iostream>
 #include <sstream>
 #include <math.h>

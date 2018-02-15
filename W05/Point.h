@@ -1,6 +1,11 @@
 #ifndef POINT_H
 #define POINT_H
+// Name: Yilin Liu-Letike
+// Date: 2/15/18
+// Desc: Definition of a class Point
+
 using namespace std;
+
 class Point{
   private:
     int x;
