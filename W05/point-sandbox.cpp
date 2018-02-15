@@ -4,18 +4,27 @@
 //       A sandbox to test out the point class implementation
 
 #include<iostream>
-#include "Point.h"
+#include "Point-heap.h"
 #include <sstream>
 using namespace std;
 
 #define SIZE 100
 
 int main(){
+    
+    Point *a = new Point();
+    a -> setX(10);
+    a -> setY(10);
+    cout << a -> print() << endl;
+    
+    cout << "a: " << a << endl;
+    delete a;
+    a = NULL;
+    cout << "a: " << a << endl;
+    
+    //cout << a -> print() << endl;
+/*
     Point a;
-    stringstream s;
-    s << 10 << "/" << "12";
-    cout << s.str() << endl;
-    cout << SIZE << endl;
     cout << "After calling defualt constructor a: ";
     cout << a.print() << endl;
     a.setX(10);
@@ -33,6 +42,6 @@ int main(){
     cout << b.print() << endl;
     
     cout <<"Distance between a and b is (5): " << a.distanceToOther(b) << endl;
-    
+*/
     return 0;
 }
