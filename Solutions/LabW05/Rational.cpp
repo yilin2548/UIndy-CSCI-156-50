@@ -82,7 +82,6 @@ bool Rational::isGreaterThan(const Rational &other) const{
     int ltop = numerator * other.denominator;
     int rtop = other.numerator * denominator;
     return ltop > rtop;
-    return true;
 }
 
 // isGreaterOrEqualTo
