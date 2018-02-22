@@ -8,11 +8,44 @@
 
 using namespace std;
 
+// Default constructor
 Email::Email(){
   subject = "";
   message = "";
 }
 
+// Copy constructor
+Email::Email(const Email &other){
+  sender = other.sender;
+  subject = other.subject;
+  message = other.message;
+  //option 1:
+  //recipients = other.recipients;
+  
+  //option 2:
+  for (unsigned int i = 0; i < other.recipients.size(); i++){
+      recipients.push_back(other.recipients[i]);
+  }
+}
+
+// Assignment operator=
+void Email::operator=(const Email &other){
+  sender = other.sender;
+  subject = other.subject;
+  message = other.message;
+  //option 1:
+  //recipients = other.recipients;
+  
+  //option 2:
+  recipients.clear();
+  for (unsigned int i = 0; i < other.recipients.size(); i++){
+      recipients.push_back(other.recipients[i]);
+  }
+}
+
+
+
+// Destructor
 Email::~Email(){}
 
 void Email::setSender(const Address &sender){

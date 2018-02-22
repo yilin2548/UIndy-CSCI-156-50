@@ -19,6 +19,21 @@ int main(){
   a.setMessage("Teach me what you know!");
   cout << a.print();
   
+  Email b(a); // call copy constructor
+  cout << b.print();
+ 
+  Email c;
+  c.setSender(Address("alice", "uindy.edu"));
+  c.addRecipient(Address("abby1","uindy.edu"));
+  c.addRecipient(Address("abby2","uindy.edu"));
+  c.addRecipient(Address("abby3","uindy.edu"));
+  c.addRecipient(Address("abby4","uindy.edu"));
+  c.addRecipient(Address("abby5","uindy.edu"));
+  c.setSubject("Spam");
+  c.setMessage("This email only has five recipients.");
+  c = a; // call assignment operator
+  cout << c.print();
+  
   return 0;
 
 }

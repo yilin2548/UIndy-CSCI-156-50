@@ -75,9 +75,18 @@ float Point::distanceToOther(const Point &other) const{
     return sqrt(x_diff * x_diff + y_diff * y_diff);
 }
 
-void Point::operator=(const Point &other){
+// the void implementation will have problem with 
+// chained assignment like c=b=a.
+// void Point::operator=(const Point &other){
+//     *x = *other.x;
+//     *y = *other.x;    
+// }
+
+// Better to implement the following operator=
+Point& Point::operator=(const Point &other){
     *x = *other.x;
-    *y = *other.x;    
+    *y = *other.x;
+    return *this;
 }
 
 Point Point::operator+(const Point &other){

@@ -19,7 +19,9 @@ class Email{
   
   public:
   Email();
+  Email(const Email &other);
   ~Email();
+  void operator=(const Email &other);
   void setSender(const Address &sender);
   void addRecipient(const Address &recipient);
   void setSubject(const string &subject);

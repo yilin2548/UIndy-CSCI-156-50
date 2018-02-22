@@ -26,7 +26,8 @@ class Point{
     float distanceToOrigin() const;
     float distanceToOther(const Point &other) const;
     
-    void operator=(const Point &other);
+    // void operator=(const Point &other);
+    Point& operator=(const Point &other);
     Point operator+(const Point &other);
 };
 #endif

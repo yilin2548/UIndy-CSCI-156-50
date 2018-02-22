@@ -11,7 +11,7 @@ class Pizza{
  
   public:
     Pizza();
-    Pizza(int size, int base_price, string sauce)
+    Pizza(int size, int base_price, string sauce);
     Pizza(const Pizza &other);
     ~Pizza();
     

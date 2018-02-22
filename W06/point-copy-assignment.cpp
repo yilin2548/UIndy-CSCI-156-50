@@ -27,5 +27,9 @@ int main(){
     Point c = a + b;
     print(c);
     
+    Point d = c = a;
+    print(c);
+    print(d);
+    
     return 0;
 }
