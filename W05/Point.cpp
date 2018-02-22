@@ -20,6 +20,11 @@ Point::Point(int a, int b){ // Overloaded constructor
     cout << "Overloaded constructor was called on" << this << endl;
 }
 
+Point::Point(const Point &other){
+    x = other.x;
+    y = other.y;
+}
+
 void Point::setX(int x){ // setter
     this -> x = x;
 }

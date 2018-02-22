@@ -14,7 +14,7 @@ class Point{
   public:
     Point();
     Point(int a, int b);
-    
+    Point(const Point &other);
     void setX(int x);
     void setY(int y);
     

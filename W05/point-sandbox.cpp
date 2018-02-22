@@ -21,6 +21,8 @@ int main(){
     delete a;
     a = NULL;
     cout << "a: " << a << endl;
+    Point *b = new Point(6,7);
+    cout << "b: " << b->print() << endl;
     
     //cout << a -> print() << endl;
 /*
