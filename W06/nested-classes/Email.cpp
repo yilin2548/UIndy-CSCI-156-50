@@ -23,9 +23,12 @@ Email::Email(const Email &other){
   //recipients = other.recipients;
   
   //option 2:
-  for (unsigned int i = 0; i < other.recipients.size(); i++){
-      recipients.push_back(other.recipients[i]);
-  }
+  // for (unsigned int i = 0; i < other.recipients.size(); i++){
+  //     recipients.push_back(other.recipients[i]);
+  // }
+  
+  //option 3:
+  recipients = vector<Address>(other.recipients);
 }
 
 // Assignment operator=
@@ -41,6 +44,9 @@ void Email::operator=(const Email &other){
   for (unsigned int i = 0; i < other.recipients.size(); i++){
       recipients.push_back(other.recipients[i]);
   }
+  
+  //option 3:
+  // recipients = vector<Address>(other.recipients);
 }
 
 
