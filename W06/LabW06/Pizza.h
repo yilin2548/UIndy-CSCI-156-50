@@ -26,6 +26,6 @@ class Pizza{
     
     void addTopping(Topping topping);
     string getString();
-    string getReciept();
+    string getReceipt();
 };
 #endif
