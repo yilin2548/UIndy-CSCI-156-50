@@ -82,5 +82,5 @@ int main(){
             cout << "Invalid Choice" << endl;
         }
     }
-    cout << my_pizza.getReciept() << endl;
+    cout << my_pizza.getReceipt() << endl;
 }
