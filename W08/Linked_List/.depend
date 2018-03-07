@@ -1,2 +1,0 @@
-LinkedList.o: LinkedList.cpp LinkedList.h
-linked-list-sandbox.o: linked-list-sandbox.cpp LinkedList.h
