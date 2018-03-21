@@ -116,3 +116,13 @@ bool Rational::isLessThan(const Rational &other) const{
 bool Rational::isLessThanOrEqualTo(const Rational &other) const{
   return other.isGreaterOrEqualTo(*this);
 }
+
+Rational::operator double(){
+    return 1.0;
+}
+
+int Rational::count = 0;
+
+unsigned Rational::numRationals(){
+
+}

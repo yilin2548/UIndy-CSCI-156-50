@@ -9,6 +9,7 @@ using namespace std;
 
 int main(){
   // Example usage of the Rational class
+  /*
   Rational a;
   cout << a.print() << " = 1/1" << endl;
   Rational b(1,2);
@@ -64,7 +65,10 @@ int main(){
   cout << f.isLessThanOrEqualTo(g) << " = 0" << endl;
   cout << g.isLessThanOrEqualTo(f) << " = 1" << endl;
   cout << f.isLessThanOrEqualTo(f) << " = 1" << endl;
-  
+  */
+  int x = 10;
+  int y = 4;
+  cout << (double)x / y << endl;
   return 0;
 }
 

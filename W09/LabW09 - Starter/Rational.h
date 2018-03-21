@@ -14,6 +14,7 @@ class Rational{
     private:
         int numerator;
         int denominator;
+        static int count;
     public:
         // Constructors
         Rational();
@@ -58,6 +59,10 @@ class Rational{
         bool isNotEqualTo(const Rational &) const;
         bool isLessThan(const Rational &) const;
         bool isLessThanOrEqualTo(const Rational &) const;
+        
+        operator double();
+        
+        static unsigned numRationals();
 };
 
 #endif
