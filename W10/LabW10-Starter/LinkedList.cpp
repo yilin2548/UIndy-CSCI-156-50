@@ -1,5 +1,5 @@
-/* Name: Yilin Liu-Leitke
-   Date: 3/3/2018
+/* Name: <fill me in>
+   Date: <fill me in>
    Desc: Implementation of LinkedList class
 */
 #include <sstream>

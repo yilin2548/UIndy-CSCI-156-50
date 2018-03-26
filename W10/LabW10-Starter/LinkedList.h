@@ -1,10 +1,9 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-/* Name: Yilin Liu-Leitke
-   Date: 3/3/2018
+/* Name: <fill me in>
+   Date: <fill me in>
    Desc: Definition of LinkedList class
 */
-// You don't have to change this file
 #include <string>
 
 using namespace std;

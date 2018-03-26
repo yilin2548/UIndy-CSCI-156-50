@@ -1,5 +1,5 @@
-/* Name: Yilin Liu-Leitke
-   Date: 3/3/2018
+/* Name: <fill me in>
+   Date: <fill me in>
    Desc: A sandbox to test the LinkedList class
 */
 #include"LinkedList.h"
