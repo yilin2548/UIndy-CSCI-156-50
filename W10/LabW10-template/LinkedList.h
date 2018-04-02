@@ -1,22 +1,55 @@
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
 /* Name: <fill me in>
    Date: <fill me in>
-   Desc: Implementation of LinkedList class
+   Desc: Definition of LinkedList class
 */
 #include <sstream>
-#include"LinkedList.h"
+#include <string>
+
 using namespace std;
+template<class T>
+struct Node{
+    T value;
+    Node *next;
+};
+
+template<class T>
+class LinkedList{
+  private:
+    Node<T> *head;
+    Node<T> *tail;
+    
+  public:
+    // Constructor
+    LinkedList();
+    
+    // Destructor
+    ~LinkedList();
+    
+    // Operations
+    void appendNode(T);
+    void deleteNode(T);
+    string getListAsString() const;
+    
+    // Lab W08
+    int countNode();
+    bool containNode(T);
+};
 
 
 // Constructor
-LinkedList::LinkedList(){
+template<class T>
+LinkedList<T>::LinkedList(){
     head = NULL;
     tail = NULL;
 }
 
 // Destructor
-LinkedList::~LinkedList(){
-    Node *nodePtr;
-    Node *nextNode;
+template<class T>
+LinkedList<T>::~LinkedList(){
+    Node<T> *nodePtr;
+    Node<T> *nextNode;
     
     nodePtr = head;
     while(nodePtr){
@@ -27,8 +60,9 @@ LinkedList::~LinkedList(){
 }
 
 // Operations
-void LinkedList::appendNode(int n){
-    Node *newNode = new Node;
+template<class T>
+void LinkedList<T>::appendNode(T n){
+    Node<T> *newNode = new Node<T>;
     newNode->value = n;
     newNode->next = NULL;
     
@@ -43,14 +77,15 @@ void LinkedList::appendNode(int n){
     }
 }
 
-void LinkedList::deleteNode(int n){
+template<class T>
+void LinkedList<T>::deleteNode(T n){
     if(!head){
         // list is empty
         // throw an error
         return;
     }
-    Node *nodePtr;
-    Node *previousNode;
+    Node<T> *nodePtr;
+    Node<T> *previousNode;
     // if delete the first node
     if(head->value == n){
         nodePtr = head->next;
@@ -83,9 +118,10 @@ void LinkedList::deleteNode(int n){
     }
 }
 
-string LinkedList::getListAsString() const{
+template<class T>
+string LinkedList<T>::getListAsString() const{
     stringstream ss;
-    Node *nodePtr;
+    Node<T> *nodePtr;
     nodePtr = head;
     while(nodePtr){
         ss << nodePtr -> value;
@@ -97,9 +133,9 @@ string LinkedList::getListAsString() const{
 
 
 // Lab W08 functions
-
-int LinkedList::countNode(){
-    Node *nodePtr;
+template<class T>
+int LinkedList<T>::countNode(){
+    Node<T> *nodePtr;
     nodePtr = head;
     int num = 0;
     while (nodePtr!=NULL){
@@ -108,8 +144,10 @@ int LinkedList::countNode(){
     }
     return num;
 }
-bool LinkedList::containNode(int n){
-    Node *nodePtr;
+
+template<class T>
+bool LinkedList<T>::containNode(T n){
+    Node<T> *nodePtr;
     nodePtr = head;
     while (nodePtr!=NULL){
         if (nodePtr->value == n){
@@ -120,3 +158,6 @@ bool LinkedList::containNode(int n){
     return false;
 }
 
+
+
+#endif
