@@ -1,0 +1,2 @@
+IntVec.o: IntVec.cpp IntVec.h
+IntVec-sandbox.o: IntVec-sandbox.cpp IntVec.h
