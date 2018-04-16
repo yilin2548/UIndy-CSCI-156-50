@@ -1,0 +1,1 @@
+vehicle-sandbox.o: vehicle-sandbox.cpp vehicle.h
