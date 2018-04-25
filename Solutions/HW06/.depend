@@ -1,0 +1,2 @@
+Rational.o: Rational.cpp Rational.h
+rational-sandbox.o: rational-sandbox.cpp Rational.h
