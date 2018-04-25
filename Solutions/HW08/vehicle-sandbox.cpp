@@ -17,6 +17,8 @@ int main(int argc, char* argv[]){
   a.setColor("Red");
   a.setYear(2016);
   cout << a.print() << endl;
+  a.setYear(2000);
+  cout << a.print() << endl;
   
   Car b;
   b.setColor("Silver");
@@ -41,5 +43,6 @@ int main(int argc, char* argv[]){
   d.setYear(2010);
   d.setCap(20000);
   cout << d.print() << endl;
+  
 }
  
