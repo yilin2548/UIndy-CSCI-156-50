@@ -10,7 +10,7 @@ int main(){
     zoo[0] = Animal("Bob");
     
     // bob.setName("Bob");
-    //bob.setNumLegs(10);
+    zoo[0].setNumLegs(10);
     zoo[0].setNumEyes(5);
     zoo[0].setHasTeeth(1);
     zoo[0].print();
@@ -18,8 +18,8 @@ int main(){
     zoo[1] = Monster("Mike");
     // mike.setName("Mike");
     zoo[1].setHasTeeth(false);
-    // mike.setIsAggressive(false);
-    //zoo[1].setNumLegs(100);
+    zoo[1].setIsAggressive(false);
+    zoo[1].setNumLegs(100);
     zoo[1].setNumEyes(200);
     zoo[1].print();
     

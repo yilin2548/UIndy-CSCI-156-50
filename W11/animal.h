@@ -33,12 +33,10 @@ class Animal {
         hasTeeth = true;
     }
     
-  protected:
     void setNumLegs(int l){
         numLegs = l;
     }
  
-  public:
     int getNumLegs(){
         return numLegs;
     }
